@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jqueryFile/jquery-3.7.0.min.js"></script>
+    <title>Learn Jquery</title>
+    
+    <script>
+
+        
+        $(document).ready(function(){
+
+            // this my code talk about using method in jquery
+            // $("p").click(function(){ //using click  method in jquery
+            //      $(this).hide();
+            // });
+            // $("p").dblclick(function(){ // using duble-click method in jquery
+            //     $(this).hide();
+            // });
+            // $("#mouseenter").mouseenter(function(){ // using mouse enter method in jquery
+            //     alert("You entered with mouse enter");
+            // });
+            // $("#mouseleave").mouseleave(function(){ // using mouse leave method in qjuery
+            //     alert("You used with mouse leave ");
+            // });
+            // $("#mousedown").mousedown(function(){ //using mouse down method 
+            //     alert("This is using mouse down");
+            // });
+            // $("#mouseup").mouseup(function(){ // using mouse up method
+            //     alert("You used with mouse up method");
+            // });
+            // $(".hover").hover(function(){ // using mouse hover method 
+            //     alert("You are using with mouse enter");
+            // },function(){
+            //     alert("You are using with mouse leave");
+            // });
+
+            // $("input").focus(function(){ // using focus method 
+            //     $(this).css("background-color","red");
+            //     $(this).css("color","white");
+            // });
+            // $("input").blur(function(){ // using blur method
+            //     $(this).css("background-color","green");
+            //     $(this).css("color","white");
+            // });
+            // $("p").on("click",function(){ // using on atteches with click event
+            //     $(this).hide();
+            // });
+            // $("p").on({ // using on , mouse enter , mouse leave , click method
+            //     mouseenter: function(){
+            //         alert("You are entered");
+            //     },
+            //     mouseleave: function(){
+            //         alert("You are mouse leave");
+            //     },
+            //     "click" : function(){
+            //         alert("You using click button");
+            //     }
+            // });
+
+            // $("#hide").click(function(){
+            //     $("p").hide(1000);
+            // });
+            // $("#show").click(function(){
+            //     $("p").show(1000);
+            // });
+
+            // $("button").click(function(){
+            //     $("p").toggle("slow"); // slow value callback speed 
+            //     $("p").toggle("fast");// fast value callback speed 
+            // });
+
+            // $("#show").click(function(){ // using fadeIn method
+            //     $(".item1").fadeIn();
+            //     $(".item2").fadeIn("slow");
+            //     $(".item3").fadeIn(10000);
+            //     $(".item4").fadeIn(20000);
+            // });
+            // $("#hide").click(function(){ // using fadeOut method
+            //     $(".item1").fadeOut();
+            //     $(".item2").fadeOut("slow");
+            //     $(".item3").fadeOut(10000);
+            //     $(".item4").fadeOut(20000);
+            // });
+            // $("#FadeToggle").click(function(){ // using fadeToggle method 
+            //     $(".item1").fadeToggle();
+            //     $(".item2").fadeToggle("slow");
+            //     $(".item3").fadeToggle(1000);
+            //     $(".item4").fadeToggle(2000);
+            // });
+
+            // $("#fadeTo").click(function(){
+            //     $(".item1").fadeTo("slow", 1); // opacity in fadeTO have between value 0 to 1
+            //     $(".item2").fadeTo("slow", 0.15);
+            //     $(".item3").fadeTo("slow", 0.79);
+            //     $(".item4").fadeTo("slow", 0.05);
+            // });
+            // $("#flip").click(function(){
+            //     // $("#panel").slideDown();// using slide down method
+            //     // $("#panel").slideUp(); // usng slide up method
+            //     // $("#panel").slideToggle(); // using slide toggle method
+            // });
+            // $("button").click(function(){  // using animate method
+            //     $("div").animate({left: '1420px'}, 5000);
+            // });
+            // $("button").click(function(){
+            //     $("div").animate({
+            //         left: '440px',
+            //         opacity: '0.17',
+            //         height: '300px',
+            //         width: '300px',
+                   
+            //     }, 3000);
+            // });
+            // $("button").click(function(){
+            //     $("div").animate({
+            //         left: '250px',
+            //         height:  '+=150px',
+            //         width: '+=150px',
+            //         opacity: '0.7',
+            //     });
+            // });
+            // $("button").click(function(){
+            //     $("div").animate({
+            //         // left: '270px',
+            //         height: 'toggle',
+            //     });
+            // });
+
+            // $("button").click(function(){
+            //     var hello  = $("div");
+            //     hello.animate({height: '300px', opacity: '0.7'}, "slow");
+            //     hello.animate({width: '300px', opacity: '0.8'}, "slow");
+            //     hello.animate({height: '100px', opacity: '0.4'}, "slow");
+            //     hello.animate({width: '100px', opacity: '1'}, "slow");
+            // });
+
+            // $("button").click(function(){
+            //     var name = $("div");
+            //     name.animate({left: '300px', height: '200px', width: '400px'}, "slow");
+            //     name.animate({fontSize: '100px'});
+            // });
+
+            // $("#start").on("click", function(){​ // using  stop method
+            //     var start = $("#panel");
+            //     start.slideToggle(3000);
+            //     $("p").animate({left: '30px',fontSize: '90px'},3000);
+            //     $("p").animate({left: '30px',fontSize: '20px'},3000);
+            // });
+            // $("#stop").on("click", function(){
+            //     var stop = $("#panel");
+            //       stop.stop();
+            // });
+
+            // $("#flip").on("click", function(){
+            //     $("#panel").slideToggle(3000);
+            //     $("p").animate({left: '30px',fontSize: '90px'},3000);
+            //     $("p").animate({left: '30px',fontSize: '20px'},3000);
+                
+            // });
+        //     $("#hide").click(function(){
+        //         $("p").fadeOut("slow",function(){
+        //             alert("You clicked hidden you paragraph");
+        //         });
+                
+        //     });
+        //    $("#show").click(function(){
+        //     $("p").fadeIn("slow", function(){
+        //         alert("You are clicked show your paragraph");
+        //     });
+        //    });
+            // $("button").on("click", function(){ // using call
+            //     $("p").hide(1000);
+            //     alert("Do you want hide your paragraph?");
+            // });
+            // using chaining
+            // $("button").mouseenter(function(){
+            //     $("p").css("color","red").slideDown(100).slideUp(100);
+            // });
+// html using jquery get method
+// $("#btn1").click(function(){
+//     alert("Text: " + $("#test").text());
+// });
+// $("#btn2").click(function(){
+//    alert("HTML : " + $("#test").html());
+// });
+// using val() method 
+// $("button").click(function(){
+//     alert("Your name : " + $("#test").val());
+// });
+// $("button").click(function(){
+//     alert($("#mytube").attr("href"));
+// });
+        // using Set method 
+        // $("#btn1").click(function(){
+        //     $("#test1").text("Hello world");
+        // });
+        // $("#btn2").click(function(){
+        //     $("#test2").html("<b>Hello world</b>");
+        // });
+        // $("#btn3").click(function(){
+        //     $("#test3").val("Hacker");
+        // });
+        // $("#btn1").on("click", function(){
+        //     $("#test1").text(function(i, rigText){
+        //         return "Old Text: " + rigText + "New Tex: Hello world! (index: " + i + ")";
+        //     });
+        // });
+        // $("#btn2").on("click", function(){
+        //     $("#test2").html(function(i, origHTMl){
+        //         return "Old HTML: " + origHTMl + "New html: Hello <b>Bold</b> (index: " + i + ")";
+        //     });
+        // })
+        // $("button").click(function(){
+        //     $("#w3school").attr("href","https://web.facebook.com/profile.php?");
+        //     $("#show").show();
+        // });
+        $("button").on("click",function(){
+            $("#w3school").attr({
+                href :"https://www.w3schools.com/jquery/",
+                title: "Learn Jquery",
+            });
+            $("#show").show();
+        });
+        });
+    </script>
+    <!-- <style>
+        #flip, #panel {
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(37, 4, 4);
+            border: 1px solid rgb(216, 184, 184);
+            width: 1000px;
+            height: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        #panel{
+            display: none;
+            padding-top: 100px;
+            width: 1000px;
+            height: 400px;
+            
+        }
+        button{
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin: 20px;
+            border-radius:7px;
+            cursor: pointer;
+        }
+        #start{
+            background-color: blue;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-weight: bold;
+            text-align: center;
+        }
+        #stop{
+            background-color: red;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-weight: bold;
+            text-align: center;
+        }
+
+    </style> -->
+</head>
+<body>
+    <p><a href="https://www.w3schools.com" id="w3school" title="You are into w3school website">W3school</a></p>
+    <p id="show" style="display: none;">You are clicked</p>
+    <button style="padding: 10px; color: white; background: blue;border: none; outline: none; border-radius: 7px;">Click Me</button>
+
+    <!-- <p ><a href="https://www.w3schools.com" id="w3school">W3schools</a></p>
+    <p id="show" style="display: none;">You are changed</p>
+    <button>Click change</button> -->
+    <!-- <p id="test1">This is a <b>bold</b> paragraph.</p>
+    <p id="test2">This is another <b>bold</b> paragraph.</p>
+    <button id="btn1">Show Old/New Text</button>
+    <button id="btn2">Show Old/New HTML</button> -->
+
+    <!-- <p id="test1">This is paragraph.</p>
+    <p id="test2">This is another paragraph</p>
+    <p>Input field: <input type="text" value="Chou Chamnan" id="test3"></p>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button> -->
+
+    <!-- <form action="">
+        <input type="text" name="username" placeholder="Enter username" value="" >
+        <input type="email" name="email" placeholder="Enter your email" value="">
+    </form> -->
+    <!-- <p>this is paragaph 1 </p>
+    <p>this is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>Programming with jquery</p>
+    <p id="mouseenter">the when take on paragraph </p>
+    <p id="mouseleave">The when mouse leave on paragraph</p>
+    <p id="mousedown">The when mouse is clicked right middle and left </p>
+    <p id="mouseup">This when mouse is click right click and middl left is related</p>
+    <p class="hover">The hover method is combination between mouseenter method and mouse leave method</p> -->
+    <!-- <p class="item1"  style="width:80px;height:80px;display:none;background-color:red;"></p>
+    <p class="item2"  style="width:80px;height:80px;display:none;background-color :pink;"></p>
+    <p class="item3"  style="width:80px;height:80px;display:none;background-color:brown;"></p>
+    <p class="item4"  style="width:80px;height:80px;display:none;background-color: blue;"></p> -->
+    <!-- <button id="hide">Hide</button> -->
+    <!-- <button id="show">Show</button>
+    <button id="FadeToggle">Toggle</button> -->
+    <!-- <button id="fadeTo">Fade to click</button> -->
+    <!-- <div id="flip">Click for dropdown</div>
+    <div id="panel">Hello Every boy!</div> -->
+    <!-- <button id="start">Start sliding</button>
+    <button id="stop">Stop sliding</button>
+    <div id="flip">Click me</div>
+    <div id="panel"><p>Hello my name is chamnan</p></div> -->
+    <!-- <div style="background:#98bf21;height:100px;width:100px;position:absolute;">Hello</div> -->
+    <!-- <p style="font-size: 20px; padding: 10px;">This is paragraph that about programming!</p>
+    <button id="show" style="padding: 10px; background: blue; border-radius: 4px; outline: none; border: none; color: white; font-weight: bolder; text-align: center; margin: 100px;">Show</button>
+    <button id="hide" style="padding: 10px; background: red; border-radius: 4px; outline: none; border: none; color: white; font-weight: bolder; text-align: center; margin: 100px;">Hide</button> -->
+    <!-- <p>This is programming!</p> -->
+    <!-- <button style="border: none; outline: none; background: palegoldenrod; padding: 7px; border-radius: 6px;">Hide</button> -->
+    <!-- <p style="font-size: 50px;">Do you love me?</p> -->
+    <!-- <button style="cursor: pointer; color: red; background: gray; padding: 10px; border: none; outline: none; border-radius: 6px; font-size: 20px; font-weight: lighter; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin: 100px;">CLICK ME</button> -->
+    <!-- <p id="test">The coding about using <b>Text </b>and <b>HTML</b>.</p>
+    <button id="btn1" style="cursor: pointer; color: whitesmoke; background: seagreen; padding: 10px; border: none; outline: none; border-radius: 6px; font-size: 20px; font-weight: lighter; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin: 100px;">CLICK ME</button> 
+    <button id="btn2" style="cursor: pointer; color: whitesmoke; background: purple; padding: 10px; border: none; outline: none; border-radius: 6px; font-size: 20px; font-weight: lighter; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin: 100px;">CLICK ME</button> 
+    -->
+        <!-- <div style="align-items: center;">
+            <div style="width: 500px; height: 300px; background: firebrick; text-align: center; padding: 30px; border-radius: 7px; border: none;    ">
+                <form action="">
+                    <p style="color: aliceblue; padding-left: 30px;">Nam: <input type="text" value="Chou chamnan" placeholder="Enter your name" id="test" style="width: 200px; height: 30px; outline: none; border-radius: 10px; border: none; text-align: center;" autofocus></p>
+                </form>
+                <button style="cursor: pointer; color: white; background: blueviolet; padding: 10px; border: none; outline: none; border-radius: 6px; font-size: 20px; font-weight: lighter; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin: 100px;">CLICK ME</button>
+            </div>
+        </div> -->
+        <!-- <a href="https://bit.ly/3oBfFux" id="mytube"  style="text-decoration: none; padding: 20px; background-color: blueviolet; color: aliceblue; margin: 100px; border-radius: 5px;">Please click me</a> -->
+        <!-- <button>Show</button> -->
+    
+     
+</body>
+</html>
