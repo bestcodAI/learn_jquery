@@ -217,12 +217,40 @@
         //     $("#w3school").attr("href","https://web.facebook.com/profile.php?");
         //     $("#show").show();
         // });
-        $("button").on("click",function(){
-            $("#w3school").attr({
-                href :"https://www.w3schools.com/jquery/",
-                title: "Learn Jquery",
-            });
-            $("#show").show();
+        // $("button").on("click",function(){
+        //     $("#w3school").attr({
+        //         href :"https://www.w3schools.com/jquery/",
+        //         title: "Learn Jquery",
+        //     });
+        //     $("#show").show();
+        // });
+        // $("button").on("click", function(){
+        //     $("#w3s").attr("href", function(i, origText){
+        //         return origText + "/jquery/";
+        //     });
+        //     $("#show").show();
+        // });
+        // $("#btn1").click(function(){
+        //     $("p").append("<b>Hello you.</b>");
+        // });
+        // $("#btn2").click(function(){
+        //     $("ol").append("<li>List item</li>");
+        // });
+        // $("#btn1").click(function(){
+        //     $("p").prepend("<b>Hello world!</b>");
+        // });
+        // $("#btn2").click(function(){
+        //     $("ol").prepend("<li>List Item</li>");
+        // });
+        // $("#before").click(function(){
+        //     $("img").before("<b>Before</b>");
+        // });
+        // $("#after").click(function(){
+        //     $("img").after("<i>After</i>");
+        // });
+        $("button").click(function(){
+            // $("div").remove();
+            $("div").empty();
         });
         });
     </script>
@@ -270,9 +298,34 @@
     </style> -->
 </head>
 <body>
-    <p><a href="https://www.w3schools.com" id="w3school" title="You are into w3school website">W3school</a></p>
+    <div style="height: 100px;width: 300px; border: 1px solid black; background: blue; color: white;">
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the dev.</p>
+    </div>
+    <br/>
+    <br/>
+    <button>Empty</button>
+    <!-- <button>Remove div element</button> -->
+    <!-- <img src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966" alt="jQuery" width="400" height="340"><br><br>
+    <button id="before">Insert before</button>
+    <button id="after">Insert After</button> -->
+    <!-- <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <ol>
+        <li>List item 1</li>
+        <li>List itme 2</li>
+        <li>List itme 3</li>
+    </ol>
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append list items</button> -->
+
+    <!-- <p><a href="https://www.w3schools.com" id="w3s">W3school.com</a></p>
+    <p id="show" style="display: none;">Mouse over the link (or click on it) to see that the value of href attribute has changed.</p>
+    <button>Change Value</button> -->
+    <!-- <p><a href="https://www.w3schools.com" id="w3school" title="You are into w3school website">W3school</a></p>
     <p id="show" style="display: none;">You are clicked</p>
-    <button style="padding: 10px; color: white; background: blue;border: none; outline: none; border-radius: 7px;">Click Me</button>
+    <button style="padding: 10px; color: white; background: blue;border: none; outline: none; border-radius: 7px;">Click Me</button> -->
 
     <!-- <p ><a href="https://www.w3schools.com" id="w3school">W3schools</a></p>
     <p id="show" style="display: none;">You are changed</p>
