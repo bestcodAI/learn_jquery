@@ -248,12 +248,152 @@
         // $("#after").click(function(){
         //     $("img").after("<i>After</i>");
         // });
+        // $("button").click(function(){
+        //     // $("div").remove();
+        //     $("div").empty();
+        // });
+        // $("button").click(function(){ // using add class
+        //     $("h1, h2, p").addClass("blue");
+        //     $("h1, h2, p").addClass("size");
+        //     $("div").addClass("important");
+        //     $("div").addClass("red");
+        // });
+        // $("button").click(function(){ // using remove class
+        //     $("h1, h2, p").removeClass("blue");
+        //     $("div").removeClass("important");
+        // });
+        // $("button").click(function(){ // using toggle class
+        //     $("h1, h2, p").toggleClass("blue");
+        //     $("div").toggleClass("important");
+        // });
+        // $("button").click(function(){ // using css method 
+        //     var n = $("p").css("background-color");
+        //     alert("Value for background : "+ n);
+        // });
+        // $("button").click(function(){ // using set a css 
+        //     $("p").css("background-color", "red");
+        // });
+        // $("button").click(function(){ // usingL multi value in css method
+        //     $("p").css({
+        //         "background-color" : "pink","font-size":"200%"
+        //     });
+        // });
+        // $("button").click(function(){ // using show data value of height and width
+        //     var txt = "";
+        //     txt += "Width of div: " + $("#div1").width() + "<br/>";
+        //     txt += "Height of div : " + $("#div1").height();
+        //     $("#div1").html(txt); 
+        // });
+        // $("button").click(function(){ // showing value of innerWidth and innerHeight
+        //     var txt = "";
+        //     txt += "Width of div: " + $("#div1").width() + "<br/>";
+        //     txt += "Height of div : "+ $("#div1").height() + "<br/>";
+        //     txt += "Inner Width of div: " + $("#div1").innerWidth() + "<br/>";
+        //     txt += "Inner Height of div: " + $("#div1").innerHeight();
+        //     $("#div1").html(txt);
+        // });
+
+        // $("button").click(function(){ // using show outer width and outer height 
+        //     var out = "";
+        //     out += "Width of div: " + $("#div1").width() + "<br/>";
+        //     out += "Height of div: " + $("#div1").height() + "<br/>";
+        //     out += "Out Width of div: " + $("#div1").outerWidth() + "<br/>";
+        //     out += "Out Height of div: " + $("#div1").outerHeight() + "<br/>";
+        //     $("#div1").html(out);
+        // });
+        // $("button").click(function(){ /// showing value of outer with and outer height with margin 
+        //     var x = "";
+        //     x += "Width value of div: " + $("#div1").width() + "<br/>";
+        //     x += "Height value of div: " + $("#div1").height() + "<br/>";
+        //     x += "Outer width of div (margin included) " + $("#div1").outerWidth(true) + "<br/>";
+        //     x += "Outer height of div (margin included) "+ $("#div1").outerHeight(true) + "<br/>";
+        //     $("#div1").html(x);
+        // });
+        // $("button").on("click", function(){ // showing value of your window
+        //      var txt = "";
+        //      txt += "Document width/height : " + $(document).width();
+        //      txt += " x " + $(document).height() + "\n";
+        //      txt += "Window width/height : " +$(window).width();
+        //      txt += " x " + $(window).height();
+        //      alert(txt);
+        // });
+        // $("button").on("click", function(){ // showing value
+        //      $("#div1").width(500).height(500);
+        // });
+
+        // $("span").parent().css({"color":"blue","border":"2px solid red"}); // using parrent and child of traversing ancestors
+        // $("span").parentsUntil("div").css({"color": "red", "border": "6px solid blue"});
+        // $("div").children().css({"color":"red","border":"3px solid red"});
+        // $("div").children("p.first").css({"color":"red","border":"2px solid red"});
+        // $("div").children("p.second").css({"color":"blue","border":"2px solid blue"});
+        // $("div").find("span").css({"color":"red","border":"2px solid red"});
+        // $("div").find("*").css({"color":"red","border":"2px solid red"});
+        // $("h2").siblings().css({"color":"red","border":"2px solid grey"});
+        // $("h2").siblings("p").css({"color":"red","border":"2px solid green"});
+        // $("h2").next().css({"color":"red","border":"2px solid red"});
+        // $("h2").nextAll().css({"color":"red","border":"2px solid red"});
+        // $("h2").nextUntil("h6").css({"color":"red","border":"2px solid blue"});
+            // $("h2").prev().css({"color":"red","border":"2px solid blue"});
+        // $("h2").prevAll().css({"color":"red","border":"3px solid blue"});
+        // $("h2").prevUntil("p").css({"color":"red","border":"3px solid red"});
+        // $("div").first().css({"color":"green","background-color":"yellow"});
+        // $("div").last().css({"color":"red","border":"2px solid red" ,"background-color":"pink"});
+        // $("p").eq(1).css({"color":"red","border":"red","background-color":"blue"});
+        // $("p").filter(".intro").css({"color":"red","background-color":"blue", "border":"3px solid green"});
+        // $("p").not(".intro").css({"color":"red","border":"2px solid blue"});
         $("button").click(function(){
-            // $("div").remove();
-            $("div").empty();
+            $("#div1").load("test.txt");
         });
         });
     </script>
+    <style>
+        .ancestors * { 
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }
+        .descendants * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+        }
+        .siblings * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+        }
+        </style>
+    <!-- <style>
+        #div1{
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style> -->
+    <!-- <style>
+        .important {
+          font-weight: bold;
+          font-size: xx-large;
+        }
+        .red{
+            color: red;
+        }
+        .size{
+          font-size: 30px;
+        }
+        .blue {
+          color: blue;
+        }
+        </style> -->
     <!-- <style>
         #flip, #panel {
             padding: 5px;
@@ -298,14 +438,129 @@
     </style> -->
 </head>
 <body>
-    <div style="height: 100px;width: 300px; border: 1px solid black; background: blue; color: white;">
+    <!-- Learn ajax and jquery -->
+    <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+    <button>Get External Content</button>
+    <!-- <h1>Welcome to My Homepage</h1>
+
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p> -->
+<!-- <h1>Welcome to My Homepage</h1>
+
+<p>My name is Donald (index 0).</p>
+<p>Donald Duck (index 1).</p>
+<p>I live in Duckburg (index 2).</p>
+<p>My best friend is Mickey (index 3).</p> -->
+
+    <!-- <h1>Welcome to My Homepage</h1>
+
+<p>This is a paragraph.</p>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div> -->
+<!-- <body class="siblings">  -->
+    <!-- <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </div> -->
+      
+    <!-- <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div> -->
+
+    <!-- <div class="descendants" style="width:500px;">div (current element) 
+        <p class="first">p (child)
+          <span>span (grandchild)</span>   
+        </p>
+        <p class="second">p (child)
+          <span>span (grandchild)</span>
+        </p> 
+      </div> -->
+    <!--/////////// start //////////////////////////////-->
+    <!-- <div style="width: 500px;">div (great-grandprarent)
+        <ul>ul (grandparent)
+            <li>li (directparent)
+                <span>span</span>
+            </li>
+        </ul>
+    </div> -->
+    <!--//////////////////start///////////////////////-->
+        <!-- <div class="ancestors">
+            <div style="width: 500px;">div (great - granparent)
+                <ul>ul (grandparent)
+                    <li>li (direparent)
+                        <span>span</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="width: 500px;">div (grandparent)
+                <p>p (direct parent) 
+                    <span>span</span>
+                </p>
+            </div>
+        </div> -->
+    <!--//////////////////end///////////////////////--> 
+    <!-- <h1 class="blue">Heading 1</h1>
+    <h2 class="blue">Heading 2</h2>
+
+    <p class="blue">This is a paragraph.</p>
+    <p class="blue">This is another paragraph.</p>
+
+    <div class="important">This is some important text!</div><br>
+     -->
+    <!-- <h1>Heading 1</h1>
+    <h2 >Heading 2</h2> -->
+
+    <!-- <p style="background-color: aqua;">This is a paragraph.</p>
+    <p style="background-color: blueviolet;">This is another paragraph.</p> -->
+    <!-- <div id="div1"></div>
+    <button>Resize div</button> -->
+
+    <!-- <div>This is some important text!</div><br> -->
+    <!-- <button>css classes to elements</button>  -->
+    <!-- <button>Show height of windows</button> -->
+    <!-- <button>Display width and height</button> -->
+    <!-- <p>Width() - returns the width of on element.</p>
+    <p>Height() - returns the Height of on element.</p> -->
+    <!-- <button>Toggle classes to elements</button> -->
+    <!-- <button>Add classes to elements</button> -->
+    <!-- <button>Remove classes to elements</button> -->
+    <!-- <div style="height: 100px;width: 300px; border: 1px solid black; background: blue; color: white;">
         This is some text in the div.
         <p>This is a paragraph in the div.</p>
         <p>This is another paragraph in the dev.</p>
     </div>
     <br/>
     <br/>
-    <button>Empty</button>
+    <button>Empty</button> -->
     <!-- <button>Remove div element</button> -->
     <!-- <img src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966" alt="jQuery" width="400" height="340"><br><br>
     <button id="before">Insert before</button>
@@ -391,7 +646,6 @@
         </div> -->
         <!-- <a href="https://bit.ly/3oBfFux" id="mytube"  style="text-decoration: none; padding: 20px; background-color: blueviolet; color: aliceblue; margin: 100px; border-radius: 5px;">Please click me</a> -->
         <!-- <button>Show</button> -->
-    
-     
+         
 </body>
 </html>
