@@ -1,1 +1,7 @@
-Hello chamnan!
+<h1>Hello chamnan!</h1>
+<p>my name chamnan i'm a <span style="color: blue;">web developer</span></p>
+<p>Follow me: </p>
+<li><a href="https://bit.ly/3HdQEvf">facebook</a></li>
+<li><a href="https://bit.ly/3oBfFux">youtube</a></li>
+<li><a href="https://github.com/bestcodAI/bestcodAI">github</a></li>
+<li><a href="https://bit.ly/3vHklPO">Project</a></li>
