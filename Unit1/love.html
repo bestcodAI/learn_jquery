@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Love</title>
+</head>
+<style>
+	body{
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+	}
+	.container{
+		background-color: pink;
+		padding: 1rem;
+		width: 290px;
+		border-radius: 10px;
+	}
+	.btn{
+		padding: .5rem 2rem;
+		border: none;
+		outline: none;
+		border-radius: 10px;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	.btnPrimary{
+		color: white;
+		background-color: purple;
+	}
+	.btnSecondary{
+		color: ghostwhite;
+		background-color: darkred;
+	}
+	.moving{
+		margin-left: 90px;
+	}
+</style>
+<body>
+    <section class="container">
+    	<h2 class="text">តើអ្នកស្រឡាញ់ខ្ញុំទេ? <span>❤</span></h2>
+    	<button class="btn btnPrimary">Yes</button>
+    	<button class="btn btnSecondary moving">No</button>
+    </section>
+    <script>
+    	const btnAgree = document.querySelector(".btnPrimary");
+    	const btnDisagree = document.querySelector(".btnSecondary");
+    	const text = document.querySelector(".text");
+
+    	btnAgree.addEventListener("click", ()=>{
+    		text.innerText = "តោះស្អែករៀបការ🙌✌💕";
+    	});
+    	btnDisagree.addEventListener("mouseover", ()=>{
+    		btnDisagree.classList.toggle("moving");
+    	});
+    </script>
+</body>
+</html>

@@ -341,9 +341,47 @@
         // $("p").eq(1).css({"color":"red","border":"red","background-color":"blue"});
         // $("p").filter(".intro").css({"color":"red","background-color":"blue", "border":"3px solid green"});
         // $("p").not(".intro").css({"color":"red","border":"2px solid blue"});
-        $("button").click(function(){
-            $("#div1").load("test.txt");
+        // $("button").click(function(){
+        //     $("#div1").load("test.txt");
+        // });
+        // $("button").click(function(){
+        //     $("#div1").load("test2.txt #p1");
+        // });
+        // show errro connection
+        // $("button").click(function(){
+        //     $("#div1").load("test1.txt", function(responseTxt, statusTxt, xhr){
+        //         if(statusTxt==  "success"){
+        //             alert("Enternal content loaded successfully!");
+        //         }
+        //         if(statusTxt == "error"){
+        //             alert("Error: "+ xhr.status + " : " + xhr.statusText);
+        //         }
+        //     });
+        // });
+        // show success connection
+        // $("button").click(function(){
+        //     $("#div1").load("test2.txt", function(responseTxt, statusTxt, xhr){
+        //         if(statusTxt==  "success"){
+        //             alert("Enternal content loaded successfully!");
+        //         }
+        //         if(statusTxt == "error"){
+        //             alert("Error: "+ xhr.status + " : " + xhr.statusText);
+        //         }
+        //     });
+        // });
+        $("button").on("click", function(){
+            $.get("demo_test.asp", function(data, status){
+                alert("Data : " + data + "\nStatus: " + status);
+            });
         });
+
+        // $("button").click( function(){
+        //     $.post("test_coding_post.txt" ,
+        //     {fname: "chamnan", city: "Phnom penh"}, 
+        //     function(data,status){
+        //         alert("Data : " + data + "\nStatus: " + status);
+        //     });
+        // });
         });
     </script>
     <style>
@@ -438,9 +476,11 @@
     </style> -->
 </head>
 <body>
+    
     <!-- Learn ajax and jquery -->
-    <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-    <button>Get External Content</button>
+    <!-- <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+    <button>Get External Content</button> -->
+    <button>Send an HTTP GET request to a page and get the result back</button>
     <!-- <h1>Welcome to My Homepage</h1>
 
     <p>My name is Donald.</p>
