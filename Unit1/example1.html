@@ -369,11 +369,11 @@
         //         }
         //     });
         // });
-        $("button").on("click", function(){
-            $.get("demo_test.asp", function(data, status){
-                alert("Data : " + data + "\nStatus: " + status);
-            });
-        });
+        // $("button").on("click", function(){
+        //     $.get("demo_test.asp", function(data, status){
+        //         alert("Data : " + data + "\nStatus: " + status);
+        //     });
+        // });
 
         // $("button").click( function(){
         //     $.post("test_coding_post.txt" ,
@@ -382,10 +382,40 @@
         //         alert("Data : " + data + "\nStatus: " + status);
         //     });
         // });
+        
+        });
+        // using noconflict related hold $ sign shortcut identifier,
+        // $.noConflict(); 
+        // jQuery(document).ready(function(){
+        //     jQuery("button").click(function(){
+        //         jQuery("p").text("Hello everyone");
+        //     });
+        // });
+        //using noconflict and declare varible 
+        // qr = $.noConflict();
+        // qr(document).ready(function(){
+        //     qr("button").click(function(){
+        //         qr("p").text("Hello programming with hello world");
+        //     });
+        // });
+        // $.noConflict();
+        // jQuery(document).ready(function($){
+        //     $("button").click(function(){
+        //         $("p").text("JQuery running still programming");
+        //     });
+        // });
+        // using filter with jquery
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function () { 
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () { 
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                 });
+             });
         });
     </script>
     <style>
-        .ancestors * { 
+        /* .ancestors * { 
           display: block;
           border: 2px solid lightgrey;
           color: lightgrey;
@@ -405,6 +435,43 @@
         color: lightgrey;
         padding: 5px;
         margin: 15px;
+        } */
+        div{
+            border: 1px solid palevioletred;
+            border-radius: 10px;
+            padding: 90px;
+            background-color: slategray;
+        }
+        h2 , p{
+            color: aliceblue;
+        }
+        input{
+            width: 300px;
+            padding: 5px;
+            outline: none;
+            border: 1px solid royalblue;
+            border-radius: 5px;
+            height: 25px;
+        }
+        table{
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            color: white;
+            background-color: yellowgreen;
+        }
+        .no {
+            width: 30px;
+        }
+        th, td{
+            border: 1px solid rebeccapurple;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
         }
         </style>
     <!-- <style>
@@ -476,11 +543,98 @@
     </style> -->
 </head>
 <body>
+    <!--Using filter with jquery-->
+    <div>
+    <h2>Filterable Table</h2>
+    <p>Type something in the input field to search the table for first names, last names or emails:</p>
+    <input id="myInput" type="text" placeholder="Search....">
+    <br/><br/>
+    <table>
+        <thead>
+            <tr>
+                <th class="no">No</th>
+                <th>Firstnam</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>1</td>
+                <td>Chamnan</td>
+                <td>Chou</td>
+                <td>chamnan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vorn</td>
+                <td>Chang</td>
+                <td>vorn@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Proloueng</td>
+                <td>Ream</td>
+                <td>proloueng@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sokha</td>
+                <td>Tho</td>
+                <td>sokha@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sophanaroth</td>
+                <td>Sam</td>
+                <td>sophanaroth@gmail.com</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Dara</td>
+                <td>Chan</td>
+                <td>dara@gmail.com</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Socheat</td>
+                <td>Ong</td>
+                <td>socheat@gmail.com</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Srey pich</td>
+                <td>Pho</td>
+                <td>sreypich@gmail.com</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Thida</td>
+                <td>Ny</td>
+                <td>thida@gmail.com</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Srey Doeurn</td>
+                <td>Seng</td>
+                <td>sreydoeurn@gmail.com</td>
+            </tr>
+        </tbody>
+        <footer>
+             <th class="no">No</th>
+                <th>Firstnam</th>
+                <th>Lastname</th>
+                <th>Email</th>
+        </footer>
+    </table>
+    </div>
     
+    <!-- <p>How are you today? and are you go to working?</p> -->
     <!-- Learn ajax and jquery -->
     <!-- <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
     <button>Get External Content</button> -->
-    <button>Send an HTTP GET request to a page and get the result back</button>
+    <!-- <button>Send an HTTP GET request to a page and get the result back</button> -->
+    <!-- <button>Using noConflict</button> -->
     <!-- <h1>Welcome to My Homepage</h1>
 
     <p>My name is Donald.</p>
